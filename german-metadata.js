@@ -38,7 +38,6 @@ function cityByName(cityName) {
   const identifiableCityName = createIdentifiableCityOrStateName(cityName);
   return ALL_CITIES.find((city) => createIdentifiableCityOrStateName(city.name) === identifiableCityName) || null;
 }
-console.log(cityByName('Hamburg'));
 
 /**
  * Function to get city objects by postal code
